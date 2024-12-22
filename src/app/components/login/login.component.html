@@ -1,0 +1,131 @@
+<div class="page">
+    <div class="left">
+        <img src='../../../assets/images/Illustration.png' alt='image'>
+    </div>
+
+    <div class="middle">
+    </div>
+
+    <div class="right">
+        <div class="layout">
+            <div class="heading">
+                <span class="welcome">
+                    Welcome to
+                </span> 
+                <span class="unstop">
+                    Unstop
+                </span>
+            </div>
+            
+            <!-- Social Login -->
+            <div class="social-login">
+                <div class="google">
+                    <img src="../../../assets/icons/google.png" alt="Google" id="googleicon" />
+                    <p class="login-text" id="google">
+                        Login with Google
+                    </p>
+                </div>
+                <div class="fb">
+                    <div class="frame">
+                        <img src="../../../assets/icons/fb.png" alt="Fb" id="fbicon" />
+                        <p class="login-text" id="fb">
+                            Login with Facebook
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="or">
+                <hr class="line1">
+                <div class="ortext">OR</div>
+                <hr class="line2">
+            </div>
+          
+            <!-- Login Form -->
+            <form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="form">
+              <!-- Username Field -->
+              <div class="form-group">
+                <img src="../../../assets/icons/account_circle.png" alt="Account" id="accounticon" />
+                <div class="input">
+                    <div class="placeholder">
+                        User name
+                    </div>
+                    <input
+                    id="username"
+                    type="text"
+                    formControlName="username"
+                    />
+                </div>    
+              </div>
+              <div *ngIf="loginForm.get('username')?.invalid && loginForm.get('username')?.touched" class="error">
+                <small *ngIf="loginForm.get('username')?.errors?.['required']">Username is required.</small>
+                <small *ngIf="loginForm.get('username')?.errors?.['pattern']">Invalid username</small>
+              </div>
+          
+              <!-- Email Field -->
+              <div class="form-group">
+                <img src="../../../assets/icons/mail.png" alt="Mail" id="mailicon" />
+                <div class="input">
+                    <div class="placeholder">
+                        Email
+                    </div>
+                    <input
+                    id="email"
+                    type="email"
+                    formControlName="email"
+                    />
+                </div>
+              </div>
+              <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="error">
+                <small *ngIf="loginForm.get('email')?.errors?.['required']">Email is required.</small>
+                <small *ngIf="loginForm.get('email')?.errors?.['email']">Invalid email</small>
+              </div>
+          
+              <!-- Password Field -->
+              <div class="form-group">
+                <img src="../../../assets/icons/key.png" alt="key" id="keyicon" />
+                <div class="input">
+                    <div class="placeholder">
+                        Password
+                    </div>
+                    <input
+                    id="password"
+                    type="password"
+                    formControlName="password"
+                    />
+                </div>
+                <img src="../../../assets/icons/visibility.png" alt="visibility" id="eyeicon" />
+              </div>
+              <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="error">
+                <small *ngIf="loginForm.get('password')?.errors?.['required']">Password is required.</small>
+                <small *ngIf="loginForm.get('password')?.errors?.['minlength']">Invalid (minimum length should be 8)</small>
+              </div>
+
+              <!-- Remember Me and Forgot Password -->
+              <div class="options">
+                <div class="remember">
+                    <input type="checkbox" formControlName="rememberMe" class="checkbox"/>
+                    <span class="rememberMe">Remember Me</span>
+                </div>
+                <a href="#" class="forgot-pwd">Forgot Password?</a>
+              </div>
+          
+              <!-- Login Button -->
+              <button type="submit" [disabled]="loginForm.invalid" class="login-button">
+                <div class="btn-text">
+                    Login
+                </div>
+              </button>
+          
+              <!-- Register Link -->
+              <div class="for-register">
+                <div class="no-account">
+                    Don’t have an account?
+                </div>  
+                <a href="#" class="register-link">Register</a>
+            </div>
+            </form>
+          </div>
+          
+        </div>
+</div>

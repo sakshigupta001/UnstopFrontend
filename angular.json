@@ -23,7 +23,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/@fontsource/poppins/index.css",
+              "node_modules/@fontsource/inter/index.css"
             ],
             "scripts": []
           },

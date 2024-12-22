@@ -1,0 +1,366 @@
+
+.page{
+  display: flex;
+  /* width: 1600px; */
+  width: 1200px;
+  height: fit-content;
+  /* top: -6252px;
+  left: -9932px; */
+  padding: 75px 74px 75px 74px;
+  /* justify-content: space-around; */
+  background: #F4F4F4;
+
+  /* height: Hug (1,099px)px; */
+}
+
+/* .left{
+  background-color: aqua;
+
+} */
+.left img{
+  width: 420px;
+  height: 421.4px;
+  padding: 30px;
+  /* padding-left: 0px; */
+
+}
+.middle{
+  /* background-color: coral; */
+  width: 90px;
+}
+.right {
+    
+    display: flex;
+    flex-direction: column;
+    width: 761px;
+    /* height: 949px; */
+    /* width: fit-content; */
+    height: fit-content; 
+    padding: 40px;
+    gap: 10px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+  }
+
+  .layout{
+    display: flex;
+    flex-direction: column;
+    width: 681px;       
+    /* height: 869px;  */
+    height: fit-content;      
+    gap: 32px;        
+  }
+
+  .heading{
+    width: 218px;
+    height: 114px;
+    gap: 0px;  
+    font-family: 'Poppins';
+  }
+
+  .welcome{
+    font-family: 'Poppins';
+    color: #1C1B1F;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48.78px;
+    text-align: left;
+    /* text-underline-position: from-font; */
+  }
+
+  .unstop{
+    font-family: 'Poppins';
+    color: #6358DC;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 62.33px;
+    text-align: left;
+    /* text-underline-position: from-font; */
+  }
+  
+  .social-login{
+    /* margin: 10px 0; */
+    display: flex;
+    flex-direction: column;
+    width: 681px;         
+    height: fit-content;  
+    gap: 16px; 
+  }
+
+  .google, .fb{
+    display: flex;
+    /* Width: Fill (681px)
+    Height: Fixed (78px) */
+    max-width: 681px;  
+    height: 18px; 
+    padding: 21px 243px;  
+    gap: 10px;    
+    border-radius: 16px;  
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    box-shadow: 0px 4px 14px 0px #0000000D;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .frame{
+    display: flex;
+    height: fit-content;
+    width: max-content;
+    gap: 12px;
+    align-items: center;
+  }
+
+  #googleicon{
+    width: 32px;
+    height: 32px;
+  }
+
+  #fbicon{
+    width: 30px;
+    height: 32px;
+  }
+  .login-text{
+    height: 22px;
+    color: #1C1B1F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    /* font-weight: 500; */
+    font-weight:500;
+    line-height: 21.68px;
+    width: max-content;
+    /*text-align: left;
+     text-underline-position: under;
+    text-decoration-skip-ink: auto;  */
+  }
+  
+  .login-text #google{
+    width: 143px;
+  }
+
+  /* .login-text #fb{
+    width: 164px;
+  }  */
+  
+  .or{
+    display: flex;
+    gap: 32px;
+    width: 673px;
+    height: 22px;
+    color: #1C1B1F;
+    align-items: center;
+  }
+
+  .line1{
+    width: 292px;
+    top: 361px;
+    border: 1px solid #BFBFBF;
+  }
+
+  .ortext{
+    width: 23px;
+    height: 22px;
+    top: 350px;
+    left: 327px;
+    color: #1C1B1F;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.68px;
+  }
+
+  .line2{
+    width: 288px;
+    top: 361px;
+    left: 385px;
+    border: 1px solid #BFBFBF;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    /* width: Fill (681px)px;
+    height: Hug (248px)px; */
+    width: 681px;
+    height: fit-content;
+    gap: 10px;
+  }
+  
+  .form-group{
+    display: flex;
+    /* width: Fill (681px)px;
+    height: Hug (76px)px; */
+    max-width: 681px;  
+    height: fit-content;
+    padding: 16px;
+    gap: 28px;
+    border-radius: 16px;
+    background: #F4F4F4;
+    align-items: center;
+  }
+
+  #accounticon, #mailicon, #keyicon, #eyeicon{
+    width: 24px;
+    height: 24px;
+  }
+
+  .input{
+    display: flex;
+    flex-direction: column;
+    /* width: Hug (85px)px;
+    height: Hug (44px)px; */
+    width: 300px;
+    height: fit-content;
+    gap: 4px;
+    color: #1C1B1F;
+  }
+
+  .placeholder{
+    width: 85px;
+    height: 16px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.26px;
+    /* color: #1C1B1F; */
+  }
+  
+  .form-group input{
+    width: 300px;
+    height: 24px;
+    /* color: #1C1B1F; */
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+    background-color:inherit;
+  }
+
+  input:focus{
+    outline: none;
+    border: none;
+  }
+
+  #eyeicon{
+    margin-left: auto;  
+  }
+  
+  
+  .options {
+    display: flex;
+    align-items: center;
+    /* width: Fill (681px)px;
+    height: Hug (22px)px; */
+    width: 100%;
+    height: fit-content;
+  }
+
+  .remember{
+    display: flex;
+    width: 153px;
+    height: 22px;
+    justify-content: space-between;
+  }
+
+
+  .checkbox{
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    border-radius: 4px;
+    background-color: #F4F4F4;
+    border: 1px solid #F4F4F4;
+  }
+
+  .rememberMe{
+    width: 120px;
+    height: 22px;
+    left: 33px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.68px;
+    color: #1C1B1F;
+  }
+
+  .forgot-pwd{
+    margin-left: auto;
+    width: 141px;
+    height: 22px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.68px;
+    color: #6358DC;
+  }
+
+  button, input[type="submit"]{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    /* padding: 0;
+    font: inherit;
+    outline: inherit; */
+  }
+  
+  .login-button {
+    display: flex;
+    /* padding: 10px;
+    margin-top: 10px; */
+    /* width: Fill (681px)px;
+    height: Fixed (77px)px; */
+    width: 100%;
+    height: 77px;
+    padding: 27px 313px 27px 313px;
+    gap: 10px;
+    border-radius: 16px;
+    background: #6358DC;
+    box-shadow: none;
+  }
+
+  .btn-text{
+    width: 44px;
+    height: 22px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.68px;
+    color: #FFFFFF;
+  }
+
+  .for-register{
+    display: flex;
+    /* width: Fill (681px)px;
+    height: Hug (22px)px; */
+    width: 100%;
+    height: fit-content;
+    justify-content: center; 
+    align-items: center;      
+    /* gap: 0px;  */
+  }
+
+  .no-account{
+    width: 200px;
+    height: 22px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.68px;
+  }
+  
+  .register-link {
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.68px;
+    color: #6358DC;
+  }
+  
+  .error{
+    color: red;
+    padding-left: 10px;
+  }
